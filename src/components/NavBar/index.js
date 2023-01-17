@@ -16,19 +16,14 @@ export default function Navbars() {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Form className="d-flex">
-                            <FiSearch className="mt-2" />
+                            <FiSearch className="m-auto" />
                             <Form.Control
-                                type="search"
+                                type="text"
                                 placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
+                                className="me-sm-2"
                             />
                         </Form>
-                        <Nav
-                            className="me-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
-                        >
+                        <Nav className="ms-auto">
                             <Link to='/' className="nav-link">Home</Link>
                             <Link to='/' className="nav-link">TV Show</Link>
                         </Nav>
